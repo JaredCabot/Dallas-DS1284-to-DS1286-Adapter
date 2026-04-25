@@ -9,6 +9,7 @@ When you get PCB's made, there are two castellated edges, so be sure to apply th
 There are only two parts on this PCB:
 
 X1 - FKFSREIBM0.032768-T3 or equivalent (any decent 32.768kHz crystal can be used)
+
 BT1 - BU1632SM-JJ-GTR or equivalent SMD CR1632 battery holder
 
 This uses a standard CR1632 coin cell. To retain memory, only replace the cell while power is applied to the chip.
