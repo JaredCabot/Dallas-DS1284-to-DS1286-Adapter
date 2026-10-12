@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: README
+    url: https://github.com/JaredCabot/Dallas-DS1284-to-DS1286-Adapter#readme
+    about: Assembly notes, the parts list and battery replacement.

@@ -1,0 +1,74 @@
+name: Problem with the board
+description: The adapter does not fit, build or work as the README describes
+title: "[Board]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Clear photos of both sides of the finished adapter answer most questions, so please attach them below.
+  - type: input
+    id: version
+    attributes:
+      label: Board version
+      description: From the Gerber file name.
+      placeholder: "v1.0 20260525"
+    validations:
+      required: true
+  - type: input
+    id: fab
+    attributes:
+      label: PCB maker and options
+      description: Who made the boards, and whether castellated edges were ordered.
+      placeholder: "JLCPCB, 0.8 mm, castellated edges"
+    validations:
+      required: false
+  - type: input
+    id: chip
+    attributes:
+      label: DS1284 markings
+      description: Everything printed on the chip, including the date code.
+      placeholder: "DALLAS DS1284 9512C3"
+    validations:
+      required: true
+  - type: input
+    id: parts
+    attributes:
+      label: Crystal and battery holder
+      description: The part numbers you fitted for X1 and BT1.
+      placeholder: "FKFSREIBM0.032768-T3, BU1632SM-JJ-GTR"
+    validations:
+      required: false
+  - type: input
+    id: host
+    attributes:
+      label: Equipment it is fitted in
+      placeholder: "Tektronix TDS 540"
+    validations:
+      required: false
+  - type: dropdown
+    id: symptom
+    attributes:
+      label: What is wrong?
+      options:
+        - "Clock does not run or keep time"
+        - "Memory is lost when power is removed"
+        - "Fitting, soldering or mechanical problem"
+        - "Problem with the Gerber files or ordering"
+        - "Something else"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+      description: Include any message the program or the instrument showed, word for word.
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Photos of both sides, measurements of the battery voltage, anything else that helps.
+    validations:
+      required: false
